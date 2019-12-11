@@ -28,6 +28,11 @@ class Song
 
   def self.genre_count
     # => {"rap" => 5, "rock" => 1, "country" => 3}
+    a = @@genres.uniq
+    r = {}
+    a.each{ |e|
+      r[e] = @@genres.count(e)
+    }
   end
 
 end
