@@ -36,4 +36,14 @@ class Song
     r
   end
 
+  def self.artist_count
+  # => {"rap" => 5, "rock" => 1, "country" => 3}
+  a = @@artists.uniq
+  r = {}
+  a.each{ |e|
+    r[e] = @@artists.count(e)
+  }
+  r
+end
+
 end
