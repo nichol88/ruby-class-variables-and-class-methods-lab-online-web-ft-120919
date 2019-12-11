@@ -33,6 +33,7 @@ class Song
     a.each{ |e|
       r[e] = @@genres.count(e)
     }
+    r
   end
 
 end
