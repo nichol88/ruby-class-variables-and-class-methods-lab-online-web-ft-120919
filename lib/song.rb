@@ -23,9 +23,7 @@ class Song
   end
 
   def self.artists
-    @@artists.collect{ |e|
-      e
-    }
+    @@artists.uniq
   end
 
   def self.genre_count
