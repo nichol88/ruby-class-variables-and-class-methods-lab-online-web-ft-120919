@@ -26,7 +26,7 @@ class Song
   end
 
   def self.genre_count
-    
+    # => {"rap" => 5, "rock" => 1, "country" => 3}
   end
 
 end
